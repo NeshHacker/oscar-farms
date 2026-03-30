@@ -1,4 +1,5 @@
-export default function About() {
+export default function About({ preview = false }: { preview?: boolean }) {
+
   return (
     <section className="py-20 px-6 bg-white">
 
@@ -27,21 +28,26 @@ export default function About() {
           </p>
 
           <ul className="space-y-3 text-gray-700">
-
             <li>🌱 Premium avocado and macadamia seedlings</li>
-
             <li>🌱 Agricultural programs supporting schools</li>
-
             <li>🌱 Tree distribution initiatives for communities</li>
-
             <li>🌱 Professional consultancy for farmers and institutions</li>
-
           </ul>
 
+          {/* 👇 ADD THIS PART */}
+          {!preview && (
+            <div className="mt-6">
+              <a
+                href="/about"
+                className="text-green-700 font-semibold hover:underline"
+              >
+                Read more →
+              </a>
+            </div>
+          )}
         </div>
 
       </div>
-
     </section>
   );
 }

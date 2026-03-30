@@ -19,8 +19,8 @@ function Home() {
   return (
     <>
       <Hero />
-      <About preview />
-      <Products preview />
+      <About />
+      <Products />
     </>
   );
 }
