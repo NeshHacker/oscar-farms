@@ -9,9 +9,9 @@ import About from "./components/About";
 import Community from "./components/Community";
 import SeedlingsSelector from "./components/SeedlingsSelector";
 import CareerPage from "./components/CareersPage";
-import Blog from "./components/Blog";
-import Contact from "./components/Contact";
 import Services from "./components/Services";
+import BlogPage from "./components/BlogPage";
+import ContactPage from "./components/ContactPage";
 import SchoolsPage from "./components/SchoolsPage";
 
 // ── Homepage: only the essentials ──────────────────────────────────────────
@@ -36,8 +36,8 @@ function App() {
         <Route path="/products"  element={<><SeedlingsSelector /><Products /></>} />
         <Route path="/about"     element={<About />} />
         <Route path="/community" element={<Community />} />
-        <Route path="/blog"      element={<Blog />} />
-        <Route path="/contact"   element={<Contact />} />
+        <Route path="/blog"      element={<BlogPage />} />
+        <Route path="/contact"   element={<ContactPage />} />
         <Route path="/services"  element={<Services />} />
         <Route path="/schools"   element={<SchoolsPage />} />
         <Route path="/careers"   element={<CareerPage />} />
